@@ -1,0 +1,61 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+#creating sequences
+
+
+```{r}
+
+
+#creating sequesnces
+
+s1<-seq(1,10,by=2)
+s1
+
+```
+```{r}
+s2<-seq(1,10,length=4)
+s2
+```
+
+```{r}
+x<-c(1,38,25,100)
+seq(along=x)
+```
+
+#creating binary var
+
+```{r}
+
+data<-read.csv("Restaurants.csv",sep = ",",header = T)
+data$zipWrong=ifelse(data$zipCode<0,TRUE,FALSE)
+data
+
+table(data$zipWrong,data$zipCode<0)
+
+```
+#creating categorical var
+```{r}
+data$zipGroups<-cut(data$zipCode,breaks=quantile(data$zipCode))
+table(data$zipGroups)
+```
+
+
+```{r}
+table(data$zipGroups,data$zipCode)
+```
+
+```{r}
+library(Hmisc)
+data$zipGroups=cut2(data$zipCode,g=4)
+table(data$zipGroups)
+```
+#creating factor
+```{r}
+data$zcf<-factor(data$zipCode)
+data$zcf[1:10]
+```
+
+
+
