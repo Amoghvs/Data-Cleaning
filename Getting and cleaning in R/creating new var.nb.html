@@ -1854,18 +1854,28 @@ summary {
 <p>#creating factor</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YSR6Y2YoMToxMClcblxuYGBgIn0= -->
-<pre class="r"><code>data$zcf(1:10)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGF0YSR6Y2ZbMToxMF1cblxuYGBgIn0= -->
+<pre class="r"><code>data$zcf[1:10]
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiRXJyb3I6IGF0dGVtcHQgdG8gYXBwbHkgbm9uLWZ1bmN0aW9uXG4ifQ== -->
-<pre><code>Error: attempt to apply non-function</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAyMTIwNiAyMTIzMSAyMTIyNCAyMTIxMSAyMTIyMyAyMTIxOCAyMTIwNSAyMTIxMSAyMTIwNSAyMTIzMVxuMzIgTGV2ZWxzOiAtMjEyMjYgMjEyMDEgMjEyMDIgMjEyMDUgMjEyMDYgMjEyMDcgMjEyMDggMjEyMDkgMjEyMTAgMjEyMTEgMjEyMTIgMjEyMTMgMjEyMTQgMjEyMTUgLi4uIDIxMjg3XG4ifQ== -->
+<pre><code> [1] 21206 21231 21224 21211 21223 21218 21205 21211 21205 21231
+32 Levels: -21226 21201 21202 21205 21206 21207 21208 21209 21210 21211 21212 21213 21214 21215 ... 21287</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MoZGF0YSR6Y2YpXG5cbmBgYCJ9 -->
+<pre class="r"><code>class(data$zcf)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZmFjdG9yXCJcbiJ9 -->
+<pre><code>[1] &quot;factor&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI2NyZWF0aW5nIHNlcXVlbmNlcw0KDQoNCmBgYHtyfQ0KDQoNCiNjcmVhdGluZyBzZXF1ZXNuY2VzDQoNCnMxPC1zZXEoMSwxMCxieT0yKQ0KczENCg0KYGBgDQpgYGB7cn0NCnMyPC1zZXEoMSwxMCxsZW5ndGg9NCkNCnMyDQpgYGANCg0KYGBge3J9DQp4PC1jKDEsMzgsMjUsMTAwKQ0Kc2VxKGFsb25nPXgpDQpgYGANCg0KI2NyZWF0aW5nIGJpbmFyeSB2YXINCg0KYGBge3J9DQoNCmRhdGE8LXJlYWQuY3N2KCJSZXN0YXVyYW50cy5jc3YiLHNlcCA9ICIsIixoZWFkZXIgPSBUKQ0KZGF0YSR6aXBXcm9uZz1pZmVsc2UoZGF0YSR6aXBDb2RlPDAsVFJVRSxGQUxTRSkNCmRhdGENCg0KdGFibGUoZGF0YSR6aXBXcm9uZyxkYXRhJHppcENvZGU8MCkNCg0KYGBgDQojY3JlYXRpbmcgY2F0ZWdvcmljYWwgdmFyDQpgYGB7cn0NCmRhdGEkemlwR3JvdXBzPC1jdXQoZGF0YSR6aXBDb2RlLGJyZWFrcz1xdWFudGlsZShkYXRhJHppcENvZGUpKQ0KdGFibGUoZGF0YSR6aXBHcm91cHMpDQpgYGANCg0KDQpgYGB7cn0NCnRhYmxlKGRhdGEkemlwR3JvdXBzLGRhdGEkemlwQ29kZSkNCmBgYA0KDQpgYGB7cn0NCmxpYnJhcnkoSG1pc2MpDQpkYXRhJHppcEdyb3Vwcz1jdXQyKGRhdGEkemlwQ29kZSxnPTQpDQp0YWJsZShkYXRhJHppcEdyb3VwcykNCmBgYA0KI2NyZWF0aW5nIGZhY3Rvcg0KYGBge3J9DQpkYXRhJHpjZjwtZmFjdG9yKGRhdGEkemlwQ29kZSkNCmRhdGEkemNmWzE6MTBdDQpgYGANCg0KDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KI2NyZWF0aW5nIHNlcXVlbmNlcw0KDQoNCmBgYHtyfQ0KDQoNCiNjcmVhdGluZyBzZXF1ZXNuY2VzDQoNCnMxPC1zZXEoMSwxMCxieT0yKQ0KczENCg0KYGBgDQpgYGB7cn0NCnMyPC1zZXEoMSwxMCxsZW5ndGg9NCkNCnMyDQpgYGANCg0KYGBge3J9DQp4PC1jKDEsMzgsMjUsMTAwKQ0Kc2VxKGFsb25nPXgpDQpgYGANCg0KI2NyZWF0aW5nIGJpbmFyeSB2YXINCg0KYGBge3J9DQoNCmRhdGE8LXJlYWQuY3N2KCJSZXN0YXVyYW50cy5jc3YiLHNlcCA9ICIsIixoZWFkZXIgPSBUKQ0KZGF0YSR6aXBXcm9uZz1pZmVsc2UoZGF0YSR6aXBDb2RlPDAsVFJVRSxGQUxTRSkNCmRhdGENCg0KdGFibGUoZGF0YSR6aXBXcm9uZyxkYXRhJHppcENvZGU8MCkNCg0KYGBgDQojY3JlYXRpbmcgY2F0ZWdvcmljYWwgdmFyDQpgYGB7cn0NCmRhdGEkemlwR3JvdXBzPC1jdXQoZGF0YSR6aXBDb2RlLGJyZWFrcz1xdWFudGlsZShkYXRhJHppcENvZGUpKQ0KdGFibGUoZGF0YSR6aXBHcm91cHMpDQpgYGANCg0KDQpgYGB7cn0NCnRhYmxlKGRhdGEkemlwR3JvdXBzLGRhdGEkemlwQ29kZSkNCmBgYA0KDQpgYGB7cn0NCmxpYnJhcnkoSG1pc2MpDQpkYXRhJHppcEdyb3Vwcz1jdXQyKGRhdGEkemlwQ29kZSxnPTQpDQp0YWJsZShkYXRhJHppcEdyb3VwcykNCmBgYA0KI2NyZWF0aW5nIGZhY3Rvcg0KYGBge3J9DQpkYXRhJHpjZjwtZmFjdG9yKGRhdGEkemlwQ29kZSkNCmRhdGEkemNmWzE6MTBdDQpgYGANCmBgYHtyfQ0KY2xhc3MoZGF0YSR6Y2YpDQpgYGANCg0KDQoNCg==</div>
 
 
 

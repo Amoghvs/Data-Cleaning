@@ -56,6 +56,9 @@ table(data$zipGroups)
 data$zcf<-factor(data$zipCode)
 data$zcf[1:10]
 ```
+```{r}
+class(data$zcf)
+```
 
 
 

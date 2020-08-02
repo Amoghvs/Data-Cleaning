@@ -1,0 +1,64 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(reshape2)
+data("mtcars")
+head(mtcars)
+```
+#melting data
+```{r}
+mtcars$carname<-rownames(mtcars)
+carMelt<-melt(mtcars,id=c("carname","gear","cyl"),measure.vars = c("mpg","hp"))
+head(carMelt)
+
+
+```
+
+```{r}
+tail(carMelt)
+```
+```{r}
+cylData<-dcast(carMelt,cyl~variable)
+cylData
+```
+```{r}
+cylData<-dcast(carMelt,cyl~variable,mean)
+cylData
+
+```
+#averaging
+```{r}
+data("InsectSprays")
+
+head(InsectSprays)
+```
+```{r}
+tapply(InsectSprays$count, InsectSprays$spray, sum)
+```
+```{r}
+
+spins=split(InsectSprays$count,InsectSprays$spray)
+spins
+```
+```{r}
+sprcount=lapply(spins, sum)
+sprcount
+```
+
+```{r}
+unlist(sprcount)
+```
+```{r}
+sapply(spins,sum)
+```
+
+```{r}
+library(plyr)
+ddply(InsectSprays,.(spray),summarize,sum=sum(count))
+```
+
